@@ -27,8 +27,7 @@ Applied K-Means model to segment and cluster all the neighborhoods in Toronto an
 ## Results
 Folium maps of each cluster are created to facilitate the analysis results.
 
-![alt text](https://github.com/wei955/The-Battle-of-Neighborhoods/blob/master/pic%201.png "pic 1")
-![alt text](https://github.com/wei955/The-Battle-of-Neighborhoods/blob/master/pic%202.png "pic 1")
+![alt text](https://github.com/wei955/The-Battle-of-Neighborhoods/blob/master/sampleResults.png "pic 1")
 
 People in the world are nowadays moving more frequently than before, I hope this analysis will help you to make a decision of choosing the neighbourhood in the destination city that fit for your needs.
 

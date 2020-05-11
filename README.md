@@ -10,24 +10,28 @@
 Scraped wiki page that contains borough and neighbourhood information of Toronto and Shanghai, we got the following:
 * Toronto.csv:  consists of Toronto’s postcodes boroughs, neighborhoods.
 * Shanghai.csv that consists of Shanghai’s city name, districts and subdistrict
-A csv file that has the geographical coordinates of each postal code for neighbourhoods in Toronto is provided.
+* A csv file that has the geographical coordinates of each postal code for neighbourhoods in Toronto is provided.
 
 
-## Obtain Coordinates
+## Methodology
+* Obtain Coordinates
 obtain latitude and longitude coordinates of each neighbourhood in Toronto and Shanghai. 
 
-## Data Visualization
+*  Data Visualization
 Used Folium library to plot a map of all the neighbourhoods in each city. The neighbourhoods belong to the same borough are plotted with the same color. cleaned out outliers that do not lie into their boroughs due to wrong location data.
 
-## Foursquare API Search Feature
+*  Foursquare API Search Feature
 Sent HTTP request by using Foursquare API and received venues information within 500 meters of each neighbourhood in json file. Only venue names and categories were extracted from the results. created a dataframe of top 10 venues for each neighbourhood.
 
-## Model Building
+*  Model Building
 Applied K-Means model to segment and cluster all the neighborhoods in Toronto and Shanghai based on the similarity of the venue types. Used Elbow method to determine the right value of K. 
 
 
 ## Results
 Folium maps of each cluster are created to facilitate the analysis results.
+
+![alt text](https://github.com/wei955/The-Battle-of-Neighborhoods/blob/master/pic%201.png "pic 1")
+![alt text](https://github.com/wei955/The-Battle-of-Neighborhoods/blob/master/pic%202.png "pic 1")
 
 People in the world are nowadays moving more frequently than before, I hope this analysis will help you to make a decision of choosing the neighbourhood in the destination city that fit for your needs.
 

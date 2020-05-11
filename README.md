@@ -1,27 +1,24 @@
 # Cousera Applied Data Science Capstone Project 
 ## The Battle of Neighborhoods
 * Created a recommendation system to help migrants find a similar neighborhood in the new city as the one they live in before.
-* Scraped borough and neighbourhood information from wikipage using python and selenium.
-* Used Foursquare API to locate nearby venues within 500 meters of each neighbourhoods.
+* Scraped data from wikipage using python and selenium.
+* Used Foursquare API to locate nearby venues of each neighbourhoods.
 * Applied K-Means model to segment and cluster all the neighborhoods based on the similarity of the venue types.
 
 
 ## Data Collection
-Scraped wiki page that contains borough and neighbourhood information of Toronto and Shanghai, we got the following:
+Scraped wikipage that contains borough and neighbourhood information of Toronto and Shanghai:
 * Toronto.csv:  consists of Toronto’s postcodes boroughs, neighborhoods.
 * Shanghai.csv that consists of Shanghai’s city name, districts and subdistrict
-* A csv file that has the geographical coordinates of each postal code for neighbourhoods in Toronto is provided.
+* Geographical coordinates of each postal code for neighbourhoods in Toronto is provided.
 
 
 ## Methodology
-* Obtain Coordinates
-obtain latitude and longitude coordinates of each neighbourhood in Toronto and Shanghai. 
+* Obtain Coordinates: obtained latitude and longitude coordinates of each neighbourhood. 
 
-*  Data Visualization
-Used Folium library to plot a map of all the neighbourhoods in each city. The neighbourhoods belong to the same borough are plotted with the same color. cleaned out outliers that do not lie into their boroughs due to wrong location data.
+*  Data Visualization: Used Folium library to plot a map of all the neighbourhoods in each city. cleaned out outliers that do not lie into their boroughs due to wrong location data.
 
-*  Foursquare API Search Feature
-Sent HTTP request by using Foursquare API and received venues information within 500 meters of each neighbourhood in json file. Only venue names and categories were extracted from the results. created a dataframe of top 10 venues for each neighbourhood.
+*  Foursquare API Search Feature: Sent HTTP request by using Foursquare API and received venues information within 500 meters of each neighbourhood in json file. Only venue names and categories were extracted from the results.
 
 *  Model Building
 Applied K-Means model to segment and cluster all the neighborhoods in Toronto and Shanghai based on the similarity of the venue types. Used Elbow method to determine the right value of K. 
